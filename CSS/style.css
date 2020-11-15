@@ -1,0 +1,59 @@
+/* CSS Document */
+#21 {
+	border:thick;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:12px;
+	color:cyan;
+}
+
+p {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#666666
+}
+
+img {
+	border-color:#000;
+}
+
+li {
+	font-style:italic;	
+}
+
+.div1 h1 {
+	font-weight:bold;
+	background:#c4c4c4;
+	margin-top:70px;
+	margin-left:50px;
+	border:1px solid black;
+	height:250px;
+	font-size:36px;
+	width:400px;
+	z-index: 3;
+}
+
+.div2 {
+	background: #09F;
+	border:2px solid #06F;
+	font-style:italic;
+	color: #03F;
+	position:absolute;
+	height:250px;
+	width:400px;
+	z-index:2;
+	left: 150px;
+	top: 171px;
+}
+
+.div3 {
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+	border:3px solid #0C9;
+	color:#0C9;
+	background:#0F9;
+	height:250px;
+	width:400px;
+	z-index:1;
+	position:absolute;
+	left: 325px;
+	top: 103px;
+}

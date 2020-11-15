@@ -1,0 +1,195 @@
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	border:1px solid black;
+	border-radius: 20px;
+	height: 115%;
+	/*height:1000px;*/
+	width:80%;
+    background-color: rgba(248,248,255, 0.9);
+	margin:0 auto;
+	margin-top: 10px; 
+	color: #333;
+}
+
+.deco-none {
+	text-decoration: none;
+}
+
+#m1 {
+	width:100%;
+	height: 150px;
+	border-bottom:1px solid black;
+	background: url(../images/m1.png); 
+	border-top-right-radius: 20px; 
+	border-top-left-radius: 20px;
+}
+
+#nav {
+	padding-top: 1%;
+	padding-left:/*20px*/1%;
+	width:20%;
+	height: 70%;
+	/*height:700px;*/
+	float:left;	
+}
+
+
+#article {
+	width:75%;
+	height: 70%;
+	/*height:700px;*/
+	/*padding: 15px;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: /*20px*/3%;
+	float:right;
+	border-left:1px solid black;
+	font-family: 'Oxygen', sans-serif;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+#podval {
+	width:100%;
+	/*height: 15%;*/
+	height:150px;
+	border-top:1px solid black;
+	color:black;
+}
+
+.main-page {
+	background-color:#F60;
+	color: white;	
+}
+
+.nav__link {
+	display:block;
+	width: 80%;
+	/*
+	width: 200px;
+	*/
+	height: /*20px*/10%;
+	text-decoration:none;	
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: /*#0FC*/#FFFFFF;	
+	font-family: "Arial", Helvetica, sans-serif;
+	font-style:italic;
+	padding: /*10px*/4%;
+	margin-top: /*5px*/3%;
+	margin-bottom: 3%;
+	line-height:/*20px*/100%;
+	color: black;
+}
+
+
+#nav ul {
+	margin-left: /*25px*/10%;
+	list-style-type:none;	
+}
+
+.nav__link:hover {
+	background-color: /*#0F9*/ #DCDCDC;
+	color: #666;
+	text-decoration:underline;
+}
+
+.nav__link__active:hover {
+	background-color:/*#F90*/#000000;
+	color: white;
+	text-decoration:none;
+}
+
+.nav__link__active {
+	background-color: /*#F90*//*#696969*/#000000;
+	color: white; 	
+}
+
+/*.header-bg {
+	background-image: url(../images/mramor.jpg);
+	border-top-right-radius: 20px; 
+	border-top-left-radius: 20px;
+	} */
+
+h1 {
+	font-size:36px;
+	font-family:"Times New Roman", Times, serif;
+	text-align:center;
+	text-transform: capitalize;
+}
+
+#podval p {
+	padding-top: 5px;
+	padding-right: 10px;	
+}
+
+body {
+	background-image: url(../images/bg.jpg);
+}
+
+#site-header__footer {
+	width: 100%;
+	height: 80px;
+	background-color: #c5d4f1;
+}
+
+#footer-left {
+	float:left;
+	width: 90px;
+}
+
+a #footer-left {
+	display:block;
+	width:90px;
+	height:33px;
+	background-image:url(../images/web-dizain.jpg);
+	margin-top: 25px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	border: solid 1px black;
+}
+
+a:hover #footer-left {
+	background-image:url(../images/web-dizain-alt.jpg);
+}
+
+#footer-right {
+	float:right;
+    width: /*350px*/30%;
+	height: 40px;
+	margin-top: 20px;
+}
+
+#footer-right span {
+	color: #000;
+	font-size: 14px;
+
+.clear {
+	clear: both;
+}
+
+.deco-none {
+	text-decoration: none;
+}
+
+#logo__active {
+	float: left;
+	/*width: 80px;*/
+}
+
+a:hover #logo__active {
+	background-image: url(../images/logo__active.png);
+}
+
+a #logo__active {
+	display: block;
+	/*height: 80px;
+	width: 80px;*/
+	background-image: url(../images/logo.png);
+	margin: 30px;
+}
