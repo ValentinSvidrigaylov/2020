@@ -14,6 +14,7 @@
 	margin:0 auto;
 	margin-top: 10px; 
 	color: #333;
+	box-shadow: 1px 1px 3px #999999;
 }
 
 .deco-none {
@@ -129,7 +130,7 @@ h1 {
 }
 
 body {
-	background-image: url(../images/bg.jpg);
+	background: url(../images/m1.jpg) fixed;
 }
 
 #site-header__footer {
@@ -168,6 +169,7 @@ a:hover #footer-left {
 #footer-right span {
 	color: #000;
 	font-size: 14px;
+}
 
 .clear {
 	clear: both;
@@ -177,19 +179,103 @@ a:hover #footer-left {
 	text-decoration: none;
 }
 
-#logo__active {
-	float: left;
-	/*width: 80px;*/
+.logotype {
+	float:left;
+	width: 90px;
 }
 
-a:hover #logo__active {
+a .logotype {
+	display:block;
+	width:90px;
+	height:82px;
+	float: left;
+	background-image: url(../images/logo.png);
+	margin: 20%;
+}
+
+a .logotype:hover {
 	background-image: url(../images/logo__active.png);
 }
 
-a #logo__active {
+table.example tr > th {
+	background-color: #DCDCDC;
+	padding: 1%;
+}
+
+table.example tr > td {
+	padding: 1%;
+}
+
+.border-black {
+	border: 2px solid black;
+}
+
+.page-menu li a {
+	color: #808080;
+	text-decoration: none;
+}
+
+.page-menu li a:hover {
+	color: #696969;
+	text-decoration: underline;
+}
+
+.icon {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.back-button {
+	display:block;
+	width: 20%;
+	/*
+	width: 200px;
+	*/
+	height: /*20px*/10%;
+	text-decoration:none;	
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: /*#0FC*/#FFFFFF;	
+	font-family: "Arial", Helvetica, sans-serif;
+	font-style:italic;
+	padding: /*10px*/4%;
+	margin-top: /*5px*/3%;
+	margin-bottom: 3%;
+	line-height:/*20px*/100%;
+	color: black;
+	text-align: center;
+	font-size: 24px;
+}
+
+.back-button:hover {
+	background-color: /*#0F9*/ #DCDCDC;
+	color: #666;
+	text-decoration:underline;
+}
+
+#hidden-text {
+	width: 80%;
+	height: 400px;
+	overflow: auto;
+}
+
+.famous-button {
 	display: block;
-	/*height: 80px;
-	width: 80px;*/
-	background-image: url(../images/logo.png);
-	margin: 30px;
+	background-color: #F5FFFA;
+	width: 40%;
+	height: 80%;
+	font-size: 24px;
+	border-radius: 30px;
+	height: 50px;
+	margin-top: 10px; 
+	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+.famous-button:hover {
+	background-color: #A9A9A9;
+	text-decoration: underline;
 }
