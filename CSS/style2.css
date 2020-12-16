@@ -1,4 +1,8 @@
 /* CSS Document */
+@import url('../fonts/static/');
+
+
+
 * {
 	margin:0;
 	padding:0;
@@ -47,12 +51,13 @@
 	/*padding: 15px;*/
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-left: /*20px*/3%;
+	padding-left: /*20px*/2%;
 	float:right;
 	border-left:1px solid black;
 	font-family: 'Oxygen', sans-serif;
 	line-height: 25px;
 	font-weight: 500;
+	padding-right: 1%;
 }
 
 #podval {
@@ -61,6 +66,9 @@
 	height:150px;
 	border-top:1px solid black;
 	color:black;
+	background-color: #DDDDDD;
+	border-bottom-right-radius: 20px; 
+	border-bottom-left-radius: 20px;
 }
 
 .main-page {
@@ -177,6 +185,7 @@ a:hover #footer-left {
 
 .deco-none {
 	text-decoration: none;
+	list-style-type: none;
 }
 
 .logotype {
@@ -209,6 +218,18 @@ table.example tr > td {
 .border-black {
 	border: 2px solid black;
 }
+
+.padding-20 {
+	padding: 20px;
+}
+
+.border-20 {
+	border-radius: 20px;
+}
+
+/*.shadow {
+	box-shadow: 10px 10px 10px;
+}*/
 
 .page-menu li a {
 	color: #808080;
@@ -278,4 +299,93 @@ table.example tr > td {
 .famous-button:hover {
 	background-color: #A9A9A9;
 	text-decoration: underline;
+}
+
+#article img {
+	margin: 5%;
+}
+
+
+.figure {
+	padding: 10px;
+	float: left;
+	border: 5px solid black;
+}
+
+figure {
+	border: 3px solid gray;
+	font-size: 28px;
+	border-radius: 20px;
+	padding: 10px;
+	padding-left: 35px;
+	margin-top: 10px;
+}
+
+figcaption {
+	text-decoration: underline solid #708090;
+}
+
+pre {
+	font-size: 24px;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1 1 80%;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#toTop {
+	width:10%;
+	height: 5%;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	vertical-align: middle;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px; 
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#333;
+	font-family:verdana;
+	font-size:24px;
+}
+
+.margin-25-top {
+	margin-top: 25px;
+}
+/*
+.vh-fr {
+	height: 12vh;
+}
+*/
+/*
+.vh-ifr {
+	height: 67.3vh;
+}
+*/
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.href {
+	text-decoration: none;
+	color: black;
+}
+
+#gt-flex {
+	align-self: ;
+}
+
+.frame-1 {
+	margin: 5px;
 }
