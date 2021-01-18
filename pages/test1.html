@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaTest</title>
+	<style type="text/css">
+		button {
+			background-color: #DCDCDC;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<style type="text/css">
+		#first {
+			position: absolute;
+			left: 300px;
+			top: 400px;
+			height: 200px;
+			width: 200px;
+			border: 1px solid #c4c4c4;
+			background: #DCDCDC;
+			margin-right: 30px; 
+			transform: skew(40deg, 110deg);
+		}
+
+		#second {
+			height: 200px;
+			width: 200px;
+			border: 1px solid #c4c4c4;
+			background: #FFFFFF;
+			margin-right: 30px;
+		}
+
+		#second:active {
+			animation-name: bruh;
+			animation-duration: 2s;
+
+		}
+
+		#third {
+			height: 200px;
+			width: 200px;
+			border: 1px solid #c4c4c4;
+			background: #DCDCDC;
+			margin-right: 30px;
+		}
+
+		#flex {
+			display: flex;
+		}
+
+		@keyframes bruh {
+			from {
+				background: white;
+			}
+
+			50% {
+				background: gray;
+			}
+
+			to {
+				background: black;
+			}
+		}
+	</style>
+	<div>
+		<button class="up"><span class="counter"></span>&nbsp;--></button>
+	</div>
+	<div id="flex">
+		<div id="first">
+			abcabcabcabcabc
+		</div>
+		<div id="second">
+			
+		</div>
+		<div id="third">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		let output = document.querySelector('.counter');
+		let up = document.querySelector('.up');
+		let counter = 0;
+		
+		up.onclick = function() {
+			output.textContent = counter; 
+			counter++;
+		};
+	</script>
+</body>
+</html>
