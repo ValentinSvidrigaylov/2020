@@ -11,6 +11,13 @@
     <link rel="manifest" href="../images/site.webmanifest">
     <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
     <script src="../javascript/pict.js"></script>
+    <script type="text/javascript">
+        let text = document.querySelector(p)
+        text.onclick = function() {
+        alert("Люблю печеньки :3")
+        }
+    </script>
+
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -36,7 +43,10 @@
         	<p>&nbsp;</p>
             <a href="../index.html" target="_self" class="deco-none"><button class="nav__link word-break">Главная</button></a>
             <a href="history.html" target="_self" class="deco-none"><button class="nav__link word-break">История</button></a>
+            <div class="drop-area">
             <a href="page1.html" target="_self" class="deco-none"><button class="nav__link word-break">Примеры</button></a>
+            <div class="menu-down"><a href="page1.html#percent">"Процент"</a><a href="page1.html#vizhener">Виженер</a><a href="page1.html#skytale">Транспозиция</a><a href="page1.html#transpozition">Скитала</a><a href="page1.html#atbash">Атбаш</a><a href="page1.html#cesar">Цезарь</a><a href="page1.html#morze">Морзе</a><a href="page1.html#polibiy">Полибий</a><a href="page1.html#book">"Книга"</a><a href="page1.html#disk">Эней</a></div>
+            </div> 
             <a href="problems.html" target="_self" class="deco-none"><button class="nav__link word-break">Проблемные области</button></a>
             <a href="famous.html" target="_self" class="deco-none"><button class="nav__link word-break">Популярные шифры</button></a>
             <a href="author.html" target="_self" class="deco-none"><button class="nav__link__active nav__link word-break">Об авторе</button></a>
@@ -52,7 +62,12 @@
             </ul-->
         </nav>
 		<main id="article">
-        	Текст
+        	<div style="display: block;">
+            <img src="../images/folks.jpg" class="border-20 border-black" width="50%" align="right">
+            <p align="left">
+            Сделал этот сайт человек прямоходящий - Сергей Шестопалов под чутким руководством верного наставника Веры Петриченко. Делая сайт, я познакомился с историей шифрования и заинтересовался этим делом, попутно узнав о профессии криптографа и большинстве её выходящих, чем, возможно, я и буду заниматься в дальнейшем.
+            </p>
+            </div>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -61,15 +76,20 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+            <!--script>
+                function myFunction() {
+                    let click = prompt("Лублу Печеньки"); 
+
+                    alert(`${click}`);    
+                }
+            </script-->
         </main>
         <div style="clear:both"></div>
       <footer id="podval">
       <a href="http://na-lenskoy.ru" target="_blank">
                 <div id="footer-left"></div>
                 </a>
+                <a href="https://vk.com/fanatsvidrigaylova" target="_blank"><img src="../images/vk.png" width="3.5%" style="margin: 1%"></a>
                 <div id="footer-right">
                 <span>
                     © Автор сайта: Шестопалов Сергей, 2020 год<br>

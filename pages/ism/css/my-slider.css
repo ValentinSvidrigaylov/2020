@@ -284,12 +284,12 @@ p.ism-badge a.ism-link:hover {
 /* SLIDER */
 
 #my-slider {
-    width: 820px;
+    width: 100%;
     -webkit-border-radius: 20px; border-radius: 20px;
 }
 
 #my-slider-ism-badge {
-    width: 820px;
+    width: 100%;
 }
 
 #my-slider:before {
@@ -344,35 +344,35 @@ p.ism-badge a.ism-link:hover {
 #my-slider .ism-radios label {
     width: 60px; height: 32px;
     border-radius: 10px;
-    color: #000; background-color: rgba(255, 255, 255, 0.5);
+    color: #fff; background-color: rgba(0, 0, 0, 0.5);
 }
 
 #my-slider .ism-radios li.ism-radio-0 label {
-    background-image: url(../image/slides/_u/1610718154122_102523.jpg);
+    background-image: url(../image/slides/_u/1611669608047_487818.jpg);
 }
 
 #my-slider .ism-radios li.ism-radio-1 label {
-    background-image: url(../image/slides/_u/1610718154085_694686.jpg);
+    background-image: url(../image/slides/_u/1611669608098_95616.jpg);
 }
 
 #my-slider .ism-radios li.ism-radio-2 label {
-    background-image: url(../image/slides/_u/1610718154071_628881.jpg);
+    background-image: url(../image/slides/_u/1611669607974_558062.jpg);
 }
 
 #my-slider .ism-radios li.ism-radio-3 label {
-    background-image: url(../image/slides/_u/1610718154060_237079.jpg);
+    background-image: url(../image/slides/_u/1611669608016_944182.jpg);
 }
 
 #my-slider .ism-radios li.ism-radio-4 label {
-    background-image: url(../image/slides/_u/1610718153963_669784.jpg);
+    background-image: url(../image/slides/_u/1611669608061_186785.jpg);
 }
 
 #my-slider .ism-radios li.active label {
-    background-color: rgba(255, 255, 255, 1.0);
+    background-color: rgba(0, 0, 0, 1.0);
 }
 
 #my-slider .ism-radios label:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
