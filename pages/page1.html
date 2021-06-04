@@ -1,239 +1,253 @@
-<!DOCTYPE HTML>
-<html lang="ru">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Примеры</title>
-<link href="../CSS/style2.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Texturina:wght@400;500&display=swap" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="152x152" href="../images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-<link rel="manifest" href="../images/site.webmanifest">
-<link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
-<script src="../javascript/pict.js"></script>
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-<style type="text/css">
-    #article {
-        line-height: 30px;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    #article .icon {
-        margin: 20px;
-    }
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="../javascript/to-top.js"></script>
+<head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Шифрование | Методы шиырования</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Favicons -->
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/style2.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="../assets/css/slider.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
 </head>
-<body class="page light-theme">
-	<div id="wrapper">
-    	 <header id="m1">
-        	<div class="sait-logotype">
-                          
-            <a class="logotype" href="../index.html" target="_self" title="На главную">
-            	<img id="logo" src="../images/logo.png" alt="На главную" width="100%"  border="0" onMouseOver="gettrip1()" onMouseOut="show1()">
-            </a>
-             </div>             
-            <div class="sait-header-title">
+
+<body>
+<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+      <a href="../index.html">
+      <img src="../assets/img/android-chrome-144x144.png" align="left" alt="Логотип" class="img-fluid margin-3p" border="0" title="На главную"><h1 class="text-light" align="right">Шифрование</h1></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="history.html">История</a></li>
+          <li class="dropdown"><a class="active" href="page1.html"><span>Методы шифрования</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="page1.html#percent">Процент</a></li>
+              <li><a href="page1.html#vigener">Виженер</a></li>
+              <li><a href="page1.html#transpozition">Транспозиция</a></li> 
+              <li><a href="page1.html#skytale">Скитала</a></li>
+              <li><a href="page1.html#atbash">Атбаш</a></li>
+              <li><a href="page1.html#cesar">Цезарь</a></li>
+              <li><a href="page1.html#morze">Морзе</a></li>
+              <li><a href="page1.html#polibiy">Полибий</a></li>
+              <li><a href="page1.html#book">Книга</a></li>
+              <li><a href="page1.html#disk">Эней</a></li>
+            </ul>
+          </li>
+          <li><a href="problems.html">Проблемные области</a></li>
+          <li><a href="famous.html">Фотогалерея</a></li>
+          <li><a href="author.html">От автора</a></li> 
+          <li><a href="info.html">Источники информации</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero No Slider Section ======= -->
+  <section id="hero-no-slider" class="d-flex justify-cntent-center align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          
+           <!--h2 id="mobile-hidden" align="center">Криптография</h2--><p align="center"><img src="../assets/img/3.png" width="60%"></p>
+          <p>Шифрование может быть симметричным, асимметричным или необратимым.</p>
+          <p>Для симметричного шифрования данных используется ключ, который служит и для дешифровки данных. Алгоритмы с симметричными ключами имеют очень высокую производительность. Криптография с симметричными ключами стойкая, что делает практически невозможным процесс дешифрования без знания ключа.<br>Основным недостатком симметричного шифрования является то, что секретный ключ должен быть известен и отправителю, и получателю.</p>
+
+<p>Асимметричное шифрование решает проблему передачи ключа по сети, потому что для данного вида шифрования используются два ключа: открытый и закрытый. С помощью специализированной программы вы генерируете пару из открытого и закрытого ключа. Открытый ключ применяется для шифрования, а для дешифрования необходим закрытый ключ. Открытый ключ может без опасений передаваться по каналам связи, а закрытый ключ вы сохраняете у себя для дешифрования. <br>Данный метод отличается от описанных ранее тем, что используемый алгоритм преобразовывает данные только в одну сторону, обратное преобразование (дешифрование) невозможно.</p>
+
+         
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero No Slider Sectio -->
+  
+  <main>
+    
+    <section>
+      <a id="back"></a>
+      <h2 align="center">Методы шифрования</h2>
+      
+            <div id="back">
+                    <a href="#percent"><img src="../assets/img/percent_icon.png" class="icon border-black" alt="Шифрование процентами" title="Шифрование процентами" ></a>&nbsp;
+                    <a href="#vigener"><img src="../assets/img/Vigenere_icon.png" class="icon border-black" alt="Шифр Виженера" title="Шифр Виженера"></a>&nbsp;
+                    <a href="#transpozition"><img src="../assets/img/transpozition_icon.png" class="icon border-black" alt="Транспозиция" title="Транспозиция"></a>&nbsp;
+                    <a href="#skytale"><img src="../assets/img/Skytale_icon.png" class="icon border-black" alt="Скитала" title="Скитала"></a>&nbsp;
+                    <a href="#atbash"><img src="../assets/img/atbash_icon.png" class="icon border-black" alt="Шифр атбаш" title="Шифр атбаш"></a>&nbsp;
+                    <a href="#cesar"><img src="../assets/img/cesar_icon.jpg" class="icon border-black" alt="Шифр Цезаря" title="Шифр Цезаря"></a>&nbsp;
+                    <a href="#morze"><img src="../assets/img/morze_icon.jpg" class="icon border-black" alt="Азбука Морзе" title="Азбука Морзе"></a>&nbsp;
+                    <a href="#polibiy"><img src="../assets/img/square.png" class="icon border-black" alt="Квадрат Полибия" title="Квадрат Полибия"></a>&nbsp;
+                    <a href="#book"><img src="../assets/img/book.png" class="icon border-black" alt="Шифровальная книга" title="Шифровальная книга"></a>&nbsp;
+                    <a href="#disk"><img src="../assets/img/disk_icon.png" class="icon border-black" alt="Диск Энея" title="Диск Энея"></a>&nbsp;
+            </div>
             <p>&nbsp;</p>
-            <img src="../images/header.png" alt="Тайная переписка" width="100%" />
-            </div>
-            
-            <div class="sait-header-but">
-            <button class="theme-button" type="button">Изменить тему</button>
-            </div>
-       </header> <!------- end header------------>
-	  <nav align="center" id="nav">
-        	<p>&nbsp;</p>
-            <a href="../index.html" target="_self" class="deco-none"><button class="nav__link word-break">Главная</button></a>
-            <a href="history.html" target="_self" class="deco-none"><button class="nav__link word-break">История</button></a>
-            <div class="drop-area">
-            <a href="page1.html" target="_self" class="deco-none"><button class="nav__link nav__link__active word-break">Примеры</button></a>
-            <div class="menu-down"><a href="pages/page1.html#percent">"Процент"</a><a href="pages/page1.html#vizhener">Виженер</a><a href="pages/page1.html#skytale">Транспозиция</a><a href="pages/page1.html#transpozition">Скитала</a><a href="pages/page1.html#atbash">Атбаш</a><a href="pages/page1.html#cesar">Цезарь</a><a href="pages/page1.html#morze">Морзе</a><a href="pages/page1.html#polibiy">Полибий</a><a href="pages/page1.html#book">"Книга"</a><a href="pages/page1.html#disk">Эней</a></div>
-            </div> 
-            <a href="problems.html" target="_self" class="deco-none"><button class="nav__link word-break">Проблемные области</button></a>
-            <a href="famous.html" target="_self" class="deco-none"><button class="nav__link word-break">Популярные шифры</button></a>
-            <a href="author.html" target="_self" class="deco-none"><button class="nav__link word-break">Об авторе</button></a>
-            <a href="info.html" target="_self" class="deco-none"><button class="nav__link word-break">Источники информации</button></a>
-            <!--ul>
-              <a href="../index.html" target="_self" class="deco-none"><li class="nav__link__active nav__link word-break">Главная</li></a>
-              <a href="history.html" target="_self" class="deco-none"><li class="nav__link word-break">История</li></a>
-              <a href="page1.html" target="_self" class="deco-none"><li class="nav__link word-break">Примеры</li></a>
-              <a href="problems.html" target="_self" class="deco-none"><li class="nav__link word-break">Проблемные области</li></a>
-              <a href="famous.html" target="_self" class="deco-none"><li class="nav__link word-break">Популярные шифры</li></a>
-              <a href="author.html" target="_self" class="deco-none"><li class="nav__link word-break">Об авторе</li></a>
-              <a href="info.html" target="_self" class="deco-none"><li class="nav__link word-break">Источники информации</li></a>
-            </ul-->
-        </nav>
-		<main id="article">
-            <div id="back"></div>
-            <div>
-                    <a href="#percent"><img src="../images/percent_icon.png" class="icon border-black" title="Шифрование процентами" alt="Шифрование процентами"></a>&nbsp;
-                    <a href="#vizhener"><img src="../images/Vigenere_icon.png" class="icon border-black"  alt="Шифр Виженера" title="Шифр Виженера"></a>&nbsp;
-                    <a href="#skytale"><img src="../images/Skytale_icon.png" class="icon border-black" alt="Скитала" title="Скитала"></a>&nbsp;
-                    <a href="#transpozition"><img src="../images/transpozition_icon.png" class="icon border-black"></a>&nbsp;
-                    <a href="#atbash"><img src="../images/atbash_icon.png" class="icon border-black" alt="Шифр атбаш" title="Шифр атбаш"></a>&nbsp;
-                    <a href="#cesar"><img src="../images/cesar_icon.jpg" class="icon border-black" alt="Шифр Цезаря" title="Шифр Цезаря"></a>&nbsp;
-                    <a href="#morze"><img src="../images/morze_icon.jpg" class="icon border-black" alt="Азбука Морзе" title="Азбука Морзе"></a>&nbsp;
-                    <a href="#polibiy"><img src="../images/square.png" class="icon border-black" alt="Квадрат Полибия" title="Квадрат Полибия"></a>&nbsp;
-                    <a href="#book"><img src="../images/book.png" class="icon border-black" alt="Шифровальная книга" title="Шифровальная книга"></a>&nbsp;
-                    <a href="#disk"><img src="../images/disk_icon.png" class="icon border-black" alt="Диск Энея" title="Диск Энея"></a>&nbsp;
-            </div>
-            <p>&nbsp;</p><br>
-            <div align="center">
-              <figure>
-                    <figcaption id="percent">
-                   <h2>Метод шифрования "Процент"</h2><br>
-                   </figcaption>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div align="center" class="wb-gradient">
+                   <a id="percent"></a>
+                   <p>&nbsp;</p><p>&nbsp;</p>
+                   <h3>Метод шифрования «Процент»</h3>
                    <p>&nbsp;</p>
-                   <p>Исходный текст:</p>
-                   <div style="display: flex; width: 85%;">
-                   	<div style="width: 48%; padding: 20px;"> 
-                   <p style="font-style:italic; font-size: 16px;">&nbsp;<br>
-                    Быть или не быть, вот в чем вопрос. Достойно ль<br>
-                    Смиряться под ударами судьбы,<br>
-                    Иль надо оказать сопротивленье<br>
-                    И в смертной схватке с целым морем бед<br>
-                    Покончить с ними? Умереть. Забыться.<br>
-                    И знать, что этим обрываешь цепь<br>
-                    Сердечных мук и тысячи лишений,<br>
-                    Присущих телу. Это ли не цель<br>
-                    Желанная? Скончаться. Сном забыться.<br>
-                    Уснуть… и видеть сны? Вот и ответ.<br>
-                    Какие сны в том смертном сне приснятся,<br>
-                    Когда покров земного чувства снят?<br>
-                    Вот в чем разгадка. Вот что удлиняет<br>
-                    Несчастьям нашим жизнь на столько лет.<br>
-                    А то кто снес бы униженья века,<br>
-                    Неправду угнетателей, вельмож<br>
-                    Заносчивость, отринутое чувство,  </p>
+                   <p align="left">Этим методoм могут пользоваться двое или несколько человек, которые знают какой текст принят для кодирования в качестве исходного. Вычисляя процентное содержание в данном тексте каждой буквы алфавита и символа, можно легко прочитать посланную в виде чисел шифрограмму.</p>
+                   <p align="left"><i>Для примера в качестве исходного текста я взял моноголог Гамлета из пьесы Уильяма Шекспира «Гамлет»:</i></p>
+                   
+                  <div>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%91%D1%8B%D1%82%D1%8C_%D0%B8%D0%BB%D0%B8_%D0%BD%D0%B5_%D0%B1%D1%8B%D1%82%D1%8C">  
+                      https://ru.wikipedia.org/wiki/
+                    </a>
                   </div>
-                   <div style="width: 47%; padding: 20px;">
-                     <p style="font-style:italic; font-size: 16px;">&nbsp;<br>
-                     Нескорый суд и более всего<br>
-                    Насмешки недостойных над достойным,<br>
-                    Когда так просто сводит все концы<br>
-                    Удар кинжала! Кто бы согласился,<br>
-                    Кряхтя, под ношей жизненной плестись,<br>
-                    Когда бы неизвестность после смерти,<br>
-                    Боязнь страны, откуда ни один<br>
-                    Не возвращался, не склоняла воли<br>
-                    Мириться лучше со знакомым злом,<br>
-                    Чем бегством к незнакомому стремиться!<br>
-                    Так всех нас в трусов превращает мысль,<br>
-                    И вянет, как цветок, решимость наша<br>
-                    В бесплодье умственного тупика,<br>
-                    Так погибают замыслы с размахом,<br>
-                    В начале обещавшие успех,<br>
-                    От долгих отлагательств. Но довольно!<br>
-                    Офелия! О радость! Помяни<br>
-                    Мои грехи в своих молитвах, нимфа.</p>
-                    </div>
+
+                   <div id="poem" id="mobile-hidden">
+                    	<div class="double-column-child"> 
+                  		 <p class="italic     ">&nbsp;<br>
+                   			Быть или не быть, вот в чем вопрос. Достойно ль<br>
+                   			Смиряться под ударами судьбы,<br>
+                    		Иль надо оказать сопротивленье<br>
+                   			И в смертной схватке с целым морем бед<br>
+                    		Покончить с ними? Умереть. Забыться.<br>
+                    		И знать, что этим обрываешь цепь<br>
+                    		Сердечных мук и тысячи лишений,<br>
+                    		Присущих телу. Это ли не цель<br>
+                    		Желанная? Скончаться. Сном забыться.<br>
+                    		Уснуть… и видеть сны? Вот и ответ.<br>
+                    		Какие сны в том смертном сне приснятся,<br>
+                    		Когда покров земного чувства снят?<br>
+                    		Вот в чем разгадка. Вот что удлиняет<br>
+                    		Несчастьям нашим жизнь на столько лет.<br>
+                    		А то кто снес бы униженья века,<br>
+                    		Неправду угнетателей, вельмож<br>
+                   		 Заносчивость, отринутое чувство,  </p>
+                 	  </div>
+                      
+                  	  <div class="double-column-child">
+                     		<p class="italic">&nbsp;<br>
+                     		Нескорый суд и более всего<br>
+                    		Насмешки недостойных над достойным,<br>
+                    		Когда так просто сводит все концы<br>
+                    		Удар кинжала! Кто бы согласился,<br>
+                    		Кряхтя, под ношей жизненной плестись,<br>
+                    		Когда бы неизвестность после смерти,<br>
+                   			Боязнь страны, откуда ни один<br>
+                    		Не возвращался, не склоняла воли<br>
+                    		Мириться лучше со знакомым злом,<br>
+                    		Чем бегством к незнакомому стремиться!<br>
+                    		Так всех нас в трусов превращает мысль,<br>
+                    		И вянет, как цветок, решимость наша<br>
+                   			В бесплодье умственного тупика,<br>
+                    		Так погибают замыслы с размахом,<br>
+                    		В начале обещавшие успех,<br>
+                   			От долгих отлагательств. Но довольно!<br>
+                    		Офелия! О радость! Помяни<br>
+                   			Мои грехи в своих молитвах, нимфа.</p>
+                    	</div>
                   </div>
                 <p>&nbsp;</p>
-                  <a href="full_percent.html"><img src="../images/percent.png" width="80%" class="border-black scale" alt="Шифр процентов" title="Шифр процентов"></a><br>
-                  <p>                    Зашифрованный текст:                  </p>
-                  <p>&nbsp;</p><br>
-                  <div id="hidden-text" title="Шифрование процентами">
-                   <p style="font-style:italic; font-size: 16px;">
-                    1.57%2.26%7.76%3.54% 5.7%3.63%5.7% 6.78%7.47% 1.57%2.26%7.76%3.54%, 4.52%9.53%7.76% 4.52% 1.47%7.47%4.13% 4.52%9.53%1.87%3.14%9.53%7.27%. 2.65%9.53%7.27%7.76%9.53%0.88%6.78%9.53% 3.63%3.54%
-                    7.27%4.13%5.7%3.14%2.36%7.76%3.54%7.27%2.36% 1.87%9.53%2.65% 2.36%2.65%6.29%3.14%6.29%4.13%5.7% 7.27%2.36%2.65%3.54%1.57%2.26%,<br>
-                    5.7%3.63%3.54% 6.78%6.29%2.65%9.53% 9.53%0.88%6.29%1.67%6.29%7.76%3.54% 7.27%9.53%1.87%3.14%9.53%7.76%5.7%4.52%3.63%7.47%6.78%3.54%7.47%<br>
-                    5.7% 4.52% 7.27%4.13%7.47%3.14%7.76%6.78%9.53%0.88% 7.27%1.18%4.52%6.29%7.76%0.88%7.47% 7.27% 0.49%7.47%3.63%2.26%4.13% 4.13%9.53%3.14%7.47%4.13% 1.57%7.47%2.65%
-                    1.87%9.53%0.88%9.53%6.78%1.47%5.7%7.76%3.54% 7.27% 6.78%5.7%4.13%5.7%? 2.36%4.13%7.47%3.14%7.47%7.76%3.54%. 1.67%6.29%1.57%2.26%7.76%3.54%7.27%2.36%.
-                    5.7% 1.67%6.78%6.29%7.76%3.54%, 1.47%7.76%9.53% 0.2%7.76%5.7%4.13% 9.53%1.57%3.14%2.26%4.52%6.29%7.47%0.88%3.54% 0.49%7.47%1.87%3.54%
-                    7.27%7.47%3.14%2.65%7.47%1.47%6.78%2.26%1.18% 4.13%2.36%0.88% 5.7% 7.76%2.26%7.27%2.36%1.47%5.7% 3.63%5.7%0.88%7.47%6.78%5.7%0.88%,
-                    1.87%3.14%5.7%7.27%2.36%0.39%5.7%1.18% 7.76%7.47%3.63%2.36%. 0.2%7.76%9.53% 3.63%5.7% 6.78%7.47% 0.49%7.47%3.63%3.54%
-                    0.59%7.47%3.63%6.29%6.78%6.78%6.29%2.36%? 7.27%0.88%9.53%6.78%1.47%6.29%7.76%3.54%7.27%2.36%. 7.27%6.78%9.53%4.13% 1.67%6.29%1.57%2.26%7.76%3.54%7.27%2.36%.
-                    2.36%7.27%6.78%2.36%7.76%3.54%… 5.7% 4.52%5.7%2.65%7.47%7.76%3.54% 7.27%6.78%2.26%? 4.52%9.53%7.76% 5.7% 9.53%7.76%4.52%7.47%7.76%.
-                    0.88%6.29%0.88%5.7%7.47% 7.27%6.78%2.26% 4.52% 7.76%9.53%4.13% 7.27%4.13%7.47%3.14%7.76%6.78%9.53%4.13% 7.27%6.78%7.47% 1.87%3.14%5.7%7.27%6.78%2.36%7.76%7.27%2.36%,
-                    0.88%9.53%1.38%2.65%6.29% 1.87%9.53%0.88%3.14%9.53%4.52% 1.67%7.47%4.13%6.78%9.53%1.38%9.53% 1.47%2.36%4.52%7.27%7.76%4.52%6.29% 7.27%6.78%2.36%7.76%?
-                    4.52%9.53%7.76% 4.52% 1.47%7.47%4.13% 3.14%6.29%1.67%1.38%6.29%2.65%0.88%6.29%. 4.52%9.53%7.76% 1.47%7.76%9.53% 2.36%2.65%3.63%5.7%6.78%2.36%7.47%7.76%
-                    6.78%7.47%7.27%1.47%6.29%7.27%7.76%3.54%2.36%4.13% 6.78%6.29%0.88%5.7%4.13% 0.59%5.7%1.67%6.78%3.54% 6.78%6.29% 7.27%7.76%9.53%3.63%3.54%0.88%9.53% 3.63%7.47%7.76%.
-                    6.29% 7.76%9.53% 0.88%7.76%9.53% 7.27%6.78%7.47%7.27% 1.57%2.26% 2.36%6.78%5.7%0.59%7.47%6.78%3.54%2.36% 4.52%7.47%0.88%6.29%,
-                    6.78%7.47%1.87%3.14%6.29%4.52%2.65%2.36% 2.36%1.38%6.78%7.47%7.76%6.29%7.76%7.47%3.63%7.47%0.88%, 4.52%7.47%3.63%3.54%4.13%9.53%0.59%
-                    1.67%6.29%6.78%9.53%7.27%1.47%5.7%4.52%9.53%7.27%7.76%3.54%, 9.53%7.76%3.14%5.7%6.78%2.36%7.76%9.53%7.47% 1.47%2.36%4.52%7.27%7.76%4.52%9.53%,
-                    6.78%7.47%7.27%0.88%9.53%3.14%2.26%0.88% 7.27%2.36%2.65% 5.7% 1.57%9.53%3.63%7.47%7.47% 4.52%7.27%7.47%1.38%9.53%
-                    6.78%6.29%7.27%4.13%7.47%0.88%0.88%5.7% 6.78%7.47%2.65%9.53%7.27%7.76%9.53%0.88%6.78%2.26%1.18% 6.78%6.29%2.65% 2.65%9.53%7.27%7.76%9.53%0.88%6.78%2.26%4.13%,
-                    0.88%9.53%1.38%2.65%6.29% 7.76%6.29%0.88% 1.87%3.14%9.53%7.27%7.76%9.53% 7.27%4.52%9.53%2.65%5.7%7.76% 4.52%7.27%7.47% 0.88%9.53%6.78%0.49%2.26%
-                    2.36%2.65%6.29%3.14% 0.88%5.7%6.78%0.59%6.29%3.63%6.29%! 0.88%7.76%9.53% 1.57%2.26% 7.27%9.53%1.38%3.63%6.29%7.27%5.7%3.63%7.27%2.36%,
-                    0.88%3.14%2.36%1.18%7.76%2.36%, 1.87%9.53%2.65% 6.78%9.53%0.88%7.47%0.88% 0.59%5.7%1.67%6.78%7.47%6.78%6.78%9.53%0.88% 1.87%3.63%7.47%7.27%7.76%5.7%7.27%3.54%,
-                    0.88%9.53%1.38%2.65%6.29% 1.57%2.26% 6.78%7.47%5.7%1.67%4.52%7.47%7.27%7.76%6.78%9.53%7.27%7.76%3.54% 1.87%9.53%7.27%3.63%7.47% 7.27%4.13%7.47%3.14%7.76%5.7%,
-                    1.57%9.53%2.36%1.67%6.78%3.54% 7.27%7.76%3.14%6.29%6.78%2.26%, 9.53%7.76%0.88%2.36%2.65%6.29%2.36% 6.78%5.7% 9.53%2.65%5.7%6.78%
-                    6.78%7.47% 4.52%9.53%1.67%4.52%3.14%6.29%0.39%6.29%3.63%7.27%2.36%, 6.78%7.47% 7.27%0.88%3.63%9.53%6.78%2.36%3.63%6.29% 4.52%9.53%3.63%5.7%
-                    4.13%5.7%3.14%5.7%7.76%3.54%7.27%2.36% 3.63%2.36%1.47%0.88%7.47% 7.27%9.53% 1.67%6.78%6.29%0.88%9.53%4.13%2.26%4.13% 1.67%3.63%9.53%4.13%,
-                    1.47%7.47%4.13% 1.57%7.47%1.38%7.27%7.76%4.52%9.53%4.13% 0.88% 6.78%7.47%1.67%6.78%6.29%0.88%9.53%4.13%9.53%4.13%
-                    7.27%7.76%3.14%7.47%4.13%5.7%7.76%3.54%7.27%2.36%!
-                    7.76%6.29%0.88% 4.52%7.27%7.47%1.18% 6.78%6.29%7.27% 4.52% 7.76%3.14%2.36%7.27%9.53%4.52% 1.87%3.14%7.47%4.52%3.14%6.29%0.39%6.29%7.47%7.76% 4.13%2.26%7.27%3.63%3.54%,
-                    5.7% 4.52%2.36%6.78%7.47%7.76%, 0.88%6.29%0.88% 0.49%4.52%7.47%7.76%9.53%0.88%, 3.14%7.47%0.88%5.7%4.13%9.53%7.27%7.76%3.54% 6.78%6.29%0.88%6.29%
-                    4.52% 1.57%7.47%7.27%1.87%3.63%9.53%2.65%3.54%7.47% 2.36%4.13%7.27%7.76%4.52%7.47%6.78%6.78%9.53%1.38%9.53% 7.76%2.36%1.87%5.7%0.88%6.29%,
-                    7.76%6.29%0.88% 1.87%9.53%1.38%5.7%1.57%6.29%0.1%7.76% 1.67%6.29%4.13%2.26%7.27%3.63%2.26% 7.27% 3.14%6.29%1.67%4.13%6.29%1.18%9.53%4.13%,
-                    4.52% 6.78%6.29%1.47%6.29%3.63%7.47% 9.53%1.57%7.47%0.39%6.29%4.52%0.88%5.7%7.47% 2.36%7.27%1.87%7.47%1.18%,
-                    9.53%7.76% 2.65%9.53%3.63%1.38%5.7%1.18% 9.53%7.76%3.63%6.29%1.38%6.29%7.76%7.47%3.63%3.54%7.27%7.76%4.52%. 6.78%9.53% 2.65%9.53%4.52%9.53%3.63%3.54%6.78%9.53%!
-                    9.53%0.2%7.47%3.63%5.7%2.36%! 9.53% 3.14%6.29%2.65%9.53%7.27%7.76%3.54%! 1.87%9.53%4.13%2.36%6.78%5.7%
-                    4.13%9.53%5.7% 1.38%3.14%7.47%1.18%5.7% 4.52% 7.27%4.52%9.53%5.7%1.18% 4.13%9.53%3.63%5.7%7.76%4.52%6.29%1.18%, 6.78%5.7%4.13%0.2%6.29%. </p>
-                  </div>
-                  <p>&nbsp;</p>
-                  <div align="left">
-                  <p>Метод шифрования:</p>
-                  <p><i>Для того чтобы глубже понять процесс шифрования (по сути, кодирования текста) я протестировал метод, в котором использовал конкретный текст (известный только мне) для вычисления процентного содержания каждой буквы алфавита в данном тексте, что позволит представить данный текст в процентах. Таким образом, данный метод позволяет осуществлять переписку только двум персонам.</i></p>
-                  </div>
-                  <p>&nbsp;</p>
-                </figure>
-            </div>
-            <div align="center">
-            <figure>
-                    <figcaption id="vizhener">
-        	       <h2>Шифр Виженера</h2><br>
-                    </figcaption>
-                    <a href="full_vizhener.html"><img src="../images/Vigenere.jpg" class="border-black scale" alt="Шифр Виженера" title="Шифр Виженера" width="60%"></a><br>
+                <p align="left"><i>В результате  получил таблицу соответствия "Символ - Процент".</i> </p>
+                <img src="../assets/img/percent.png" width="80%" class="border-black scale" alt="Шифр процентов" title="Шифр процентов"><br>
+                <p align="left">Зашифрованный текст:</p>
+                <p align="left"><i>В соответствии с этим кодом я зашифровал текст в виде чисел.</i></p>
+                <p align="left"><i> Буду рад, если вы сумеете прочитать зашифрованный ниже текст и проверить результат.</i></p>
+                <p class="word-break">
+                      4.13%9.53%0.88%&nbsp;2.65%2.36(2)%2.65%2.36(2)%&nbsp;<br>7.27%6.39%4.13%2.26%1.18%&nbsp;1.47%7.47%7.27%7.76%6.78%2.26%1.18%&nbsp;<br>1.87%3.14%6.39%4.52%5.7%3.63%,&nbsp;3.25%9.53%1.38%2.65%6.39%&nbsp;6.78%7.47%&nbsp;4.52%&nbsp;<br>0.88%2.36(1)%7.76%3.25%2.36(1).&nbsp;9.53%6.78%&nbsp;<br>2.36(1)%4.52%6.39%0.59%6.39%7.76%3.54%&nbsp;7.27%7.47%1.57%2.36(2)%&nbsp;<br>1.67%6.39%7.27%7.76%6.39%4.52%5.7%3.63%.&nbsp;5.7%&nbsp;3.63%2.36(1)%1.47%0.88%7.47%&nbsp;<br>4.52%2.26%2.65%2.36(1)4.13%6.39%7.76%3.54%&nbsp;6.78%7.47%&nbsp;4.13%9.53%1.38%.
+                 </p>
+                 <p>Формат: Пробел после слова, точки или запятой. Большая буква после точки.</p>
+                    
+                    <button id="submit" class="border-black" type="submit">Ответ</button>
                     <p>&nbsp;</p>
-                    <div align="left">
-                    <p>  Метод шифрования:</p>
-                    <p>  <i>Шифруемое слово шифруется с помощью ключевого слова (подробное описание см. <a href="history.html">историю шифров</a>).</i></p>
+                    <div class="hidden" id="hidden1">Ты молодец!&nbsp;<img src="../assets/img/smile.png" width="60"></div>
+                    <div class="hidden" id="hidden2">Попробуй ещё раз&nbsp;<img src="../assets/img/grumpy.png" width="60"></div>
+                  
+                  <p align="left"><em>Таким образом, зная исходный текст и метод кодирования, положенный в основу, можно читать или отправлять любые сообщения понятные только посвященным людям.</em></p>
+             <p>&nbsp;</p>  
+             </div>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            
+            <div align="center" class="wb-gradient">
+            <a name="vigener"></a>
+           <p>&nbsp;</p><p>&nbsp;</p>
+            <h3>Шифр Виженера</h3>
+          
+           <p> <img src="../assets/img/Vigenere.jpg" class="border-black scale" alt="Шифр Виженера" title="Шифр Виженера" width="50%"></p>
+           <p align="left">  Метод шифрования:</p>
+           <p align="left"><em>Шифруемое слово шифруется с помощью ключевого слова (подробное описание см. <a href="history.html">историю шифров</a>).</em></p>
+           <p>&nbsp;</p><p>&nbsp;</p>
+           <p>&nbsp;</p><p>&nbsp;</p>
+           </div>
+             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            
+            <div align="center"  class="wb-gradient">
+            	 <p>&nbsp;</p><p>&nbsp;</p>
+                 <a id="transpozition"></a>
+                 
+                   <h3>Транспозиция</h3><br>
+              <div class="double-column">
+                    	<div class="double-column-child"> 
+                  		 <p class="italic">
+                   			Исходный текст:<br>
+                    		<br>
+                    		Подруга дней моих суровых,<br>
+                   			Голубка дряхлая моя!<br>
+                    		Одна в глуши лесов сосновых<br>
+                   			Давно, давно ты ждешь меня.
+                   			</p>
+                        </div>
+                        
+                       <div class="double-column-child"> 
+                  		 <p class="italic">
+                    		Зашифрованный текст:<br>
+                    		<br>
+                    		агурдоП йенд хиом хыворус<br>
+                   			акбулоГ яалхярд яом!<br>
+                    		андО в ишулг восел хывонсос<br>
+                    		онваД, онвад ыт ьшедж янем.</p>
+                       </div>
+                   </div> 
+                    <div align="center">
+                   <p> Способ шифрования: <i>Слова в предложении начинаются с конца.</i></p>
                     </div>
-                    <p>&nbsp;</p>
-                </figure>
+             <p>&nbsp;</p>       
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="transpozition">
-                   <h2>Транспозиция</h2><br>
-                    </figcaption>
-                    <p>&nbsp;</p><br>
-                    Исходный текст:<br>
-                    <p>&nbsp;</p><br>
-                    Подруга дней моих суровых,<br>
-                    Голубка дряхлая моя!<br>
-                    Одна в глуши лесов сосновых<br>
-                    Давно, давно ты ждешь меня.<br>
-                    <p>&nbsp;</p>
-                    <div title="Транспозиция">
-                    Зашифрованный текст:<br>
-                    <p>&nbsp;</p>
-                    агурдоП йенд хиом хыворус<br>
-                    акбулоГ яалхярд яом!<br>
-                    андО в ишулг восел хывонсос<br>
-                    онваД, онвад ыт ьшедж янем.<br>
-                    </div>
-                    <p>&nbsp;</p><br>
-                    <div align="left">
-                    Способ шифрования:<br>
-                    <i>Слова в предложении начинаются с конца.</i>
-                    </div>
-                    <p>&nbsp;</p><br>
-                </figure>
-            </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="skytale">
-                   <h2>Скитала</h2><br>
-                    </figcaption>
-                    <p>&nbsp;</p><br>
-                    <img src="../images/Skytale.png" width="60%" alt="Скитала" title="Скитала" class="scale"><br>
-                    <p>&nbsp;</p><br>
-                    <pre>
+             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            
+            <div align="center" class="wb-gradient">
+             <a id="skytale"></a>
+             <p>&nbsp;</p>
+             <h3>Скитала</h3>
+                     <p><img src="../assets/img/Skytale.png" width="30%" alt="Скитала" title="Скитала"  class="scale"></p>
+                    
+        <pre id="mobile-hidden">
 | | | | | | | | | | | | | | | | | | |
 | |В| |и|г|р|е| |е|е| |к|о|н|н|ы|й| |
 | |н|е| |с|л|о|в|и|т|,| | | | | | | |
@@ -245,139 +259,130 @@
 | |в|о|й|д|е|т|!| | | | | | | | | | |
 | | | | | | | | | | | | | | | | | | |
                     </pre>
-                    <div align="left">
-                    Метод шифрования:<br>
+                    <p class="left"> 
+                       Метод шифрования:</p>
+                    <div class="left">
                     <i>
                         <ol>
-                            <li>Первые n символов выписываются в первую строку слева направо;</li>
-                            <li>Следующие n символов выписываем во вторую строчку пока её не заполним и т.д.;</li>
-                            <li>Если все символы выписаны, а остались незаполненные ячейки, заполняем их пробелами или любыми другими символами по договоренности;</li>
-                            <li>Если выписаны не все символы, а таблица заполнена, значит, при выборе размеров допущена ошибка;</li>
-                            <li>Теперь разворачиваем текст по столбцам.</li>
+                            <li><p>Первые n символов выписываются в первую строку слева направо;</p></li>
+                            <li><p>Следующие n символов выписываем во вторую строчку пока её не заполним и т.д.;</p></li>
+                            <li><p>Если все символы выписаны, а остались незаполненные ячейки, заполняем их пробелами или любыми другими символами по договоренности;</p></li>
+                            <li><p>Если выписаны не все символы, а таблица заполнена, значит, при выборе размеров допущена ошибка;</p></li>
+                            <li><p>Теперь разворачиваем текст по столбцам.</p></li>
                         </ol>
                     </i>
-                    </div>
-                    <p>&nbsp;</p><br>
-                </figure>
-            </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="atbash">
-                    <h2>Атбаш</h2><br>
-                    </figcaption>
-                    <img src="../images/atbash.png" width="80%" class="border-black scale" alt="Шифр атбаш" title="Шифр атбаш">
-                    <!--table border="2px" cellspacing="0" width="60%" align="center" class="example">
-                            <tr>
-                                <th>а</th><th>б</th><th>в</th><th>г</th><th>д</th><th>е</th><th>ё</th><th>ж</th><th>з</th><th>и</th><th>й</th><th>к</th><th>л</th><th>м</th><th>н</th><th>о</th><th>п</th><th>р</th><th>с</th><th>т</th><th>у</th><th>ф</th><th>х</th><th>ц</th><th>ч</th><th>ш</th><th>щ</th><th>ъ</th><th>ы</th><th>ь</th><th>э</th><th>ю</th><th>я</th>
-                            </tr>
-                            <tr>
-                                <td>я</td><td>ю</td><td>э</td><td>ь</td><td>ы</td><td>ъ</td><td>щ</td><td>ш</td><td>ч</td><td>ц</td><td>х</td><td>ф</td><td>у</td><td>т</td><td>с</td><td>р</td><td>п</td><td>о</td><td>н</td><td>м</td><td>л</td><td>к</td><td>й</td><td>и</td><td>з</td><td>ж</td><td>ё</td><td>е</td><td>д</td><td>г</td><td>в</td><td>б</td><td>а</td>
-                            </tr>
-                    </table-->
-                    <p>&nbsp;</p><br>
-                    <div align="left">
+               <p>&nbsp;</p>     </div>
+             </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+             
+            <div align="center" class="wb-gradient">
+               <p>&nbsp;</p>
+                    <a id="atbash"></a>
+                    <h3>Атбаш</h3>
+                    <p><img src="../assets/img/atbash.png" width="80%" class="border-black scale" alt="Шифр атбаш" title="Шифр атбаш"></p>
+                    <p>&nbsp;</p>
+                   <p class="left">
                     Метод шифрования:<br>
                     <i>Алфавит начинается с конца.</i>
-                    </div>
-                    <p>&nbsp;</p><br>
-                </figure>
+                    </p>
+                    <p>&nbsp;</p>
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="cesar">
-                    <h2>Шифр Цезаря</h2><br>
-                    (В примере использовался ROT3)
-                    </figcaption>
-                    <img src="../images/cesar.png" width="80%" class="border-black scale" alt="Шифр Цезаря" title="Шифр Цезаря">
-                    <!--table border="2px" cellspacing="0" width="60%" align="center" class="example">
-                        <tr>
-                            <th>а</th><th>б</th><th>в</th><th>г</th><th>д</th><th>е</th><th>ё</th><th>ж</th><th>з</th><th>и</th><th>й</th><th>к</th><th>л</th><th>м</th><th>н</th><th>о</th><th>п</th><th>р</th><th>с</th><th>т</th><th>у</th><th>ф</th><th>х</th><th>ц</th><th>ч</th><th>ш</th><th>щ</th><th>ъ</th><th>ы</th><th>ь</th><th>э</th><th>ю</th><th>я</th>
-                        </tr>
-                        <tr>
-                            <td>б</td><td>в</td><td>г</td><td>д</td><td>е</td><td>ё</td><td>ж</td><td>з</td><td>и</td><td>й</td><td>к</td><td>л</td><td>м</td><td>н</td><td>о</td><td>п</td><td>р</td><td>с</td><td>т</td><td>у</td><td>ф</td><td>х</td><td>ц</td><td>ч</td><td>ш</td><td>щ</td><td>ъ</td><td>ы</td><td>ь</td><td>э</td><td>ю</td><td>я</td><td>а</td>
-                        </tr>
-                    </table-->
+             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+             
+            <div align="center" class="wb-gradient">
+               <p>&nbsp;</p>
+                    <a id="cesar"></a>
+                    <h3>Шифр Цезаря</h3><br>
+                    <p>(В примере использовался ROT3)</p>
+                     <img src="../assets/img/cesar.png" width="80%" class="border-black scale" alt="Шифр Цезаря" title="Шифр Цезаря">
                     <p>&nbsp;</p><br>
-                    <div align="left">
+                    <p class="left">
                     Метод шифрования:<br>  
                     <i>В зависимости от ROT (сдвига) сдвигается определённое количество букв (на это зависит буква на конце).</i>
-                    </div>  
-                    <p>&nbsp;</p><br>
-                </figure>
+                    </p>  
+                    <p>&nbsp;</p>
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="morze">
-                   <h2>Азбука Морзе</h2><br>
-                    </figcaption>
-                    <!--a href="full_morze.html"--><img src="../images/morze.jpg" alt="Азбука Морзе" title="Азбука Морзе" width="60%" class="border-black scale"><!--/a--><br>
-                    <p>&nbsp;</p><br>
-                    <div align="left">
+             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div align="center" class="wb-gradient">
+            <p>&nbsp;</p>
+                <a id="morze"></a>
+                   <h2>Азбука Морзе</h2>
+                    <img src="../assets/img/morze.jpg" alt="Азбука Морзе" title="Азбука Морзе" width="50%" class="border-black scale"><br>
+                    <p>&nbsp;</p>
+                    <p class="left">
                     Метод шифрования:<br>
                     <i>Буквы шифруются с помощью точек и тире.</i>
-                    </div>
-                    <p>&nbsp;</p><br>
-                </figure>                
+                    </p>
+                    <p>&nbsp;</p>
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="polibiy">
-                    <h2>Квадрат Полибия</h2><br>
-                    </figcaption>
-                    <!--a href="full_polibiy.html"--><img src="../images/polibiy.png" alt="Квадрат Полибия" title="Квадрат Полибия" width="60%" class="border-black scale"><!--/a-->
-                    <p>&nbsp;</p><br>
-                    <div align="left">
+             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            
+            <div align="center" class="wb-gradient">
+                <p>&nbsp;</p>
+                    <a id="polibiy"></a>
+                    <h3>Квадрат Полибия</h3>
+                    <p>&nbsp;</p>
+                    <p><img src="../assets/img/polibiy.png" alt="Квадрат Полибия" title="Квадрат Полибия" width="40%" class="border-black scale"></p>
+                    <p class="left">
                     Метод шифрования:<br>
                     <i>Буква соответствует верхнему и нижнему числу.</i>
-                    <div align="left">
-                    <p>&nbsp;</p><br>
-                </figure> 
+                    </p>
+                    <p>&nbsp;</p>
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="book">
-                   <h2>Шифровальная книга</h2><br>
-                    </figcaption>
-                    <img src="../images/book.png" width="80%" class="scale">
-                    <p>&nbsp;</p><br>
-                    <div align="left">
-                    Метод шифрования:<br>
-                    <i>В книге записываются слова и их зашифрованные значения.<br>
-                    (Также могут использоваться коды).</i>
-                    </div>
-                    <p>&nbsp;</p><br>
-                </figure>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div align="center" class="wb-gradient">
+                <p>&nbsp;</p>
+                    <a id="book"></a>
+                    <h3>Шифровальная книга</h3>
+                    <p><img src="../assets/img/book.png" class="scale" width="20%"></p>
+                    <p class="left">
+                    	Метод шифрования:<br>
+                    	<i>В книге записываются слова и их зашифрованные значения.<br>
+                    	(Также могут использоваться коды).</i>
+                    </p>
+                <p>&nbsp;</p>
             </div>
-            <div align="center">
-                <figure>
-                    <figcaption id="disk">
-                   <h2>Диск Энея</h2><br>
-                    </figcaption>
-                    <img src="../images/disk.png" alt="Диск Энея" title="Диск Энея" width="60%" class="scale"><br>
-                    <p>&nbsp;</p><br>
-                    <div align="left">
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div align="center" class="wb-gradient">
+               <a id="disk"></a>
+                   <h3>Диск Энея</h3>
+                   <p><img src="../assets/img/disk.png" alt="Диск Энея" title="Диск Энея" width="20%" class="scale"></p>
+                   <p class="left">
                     Метод шифрования:<br>
                     <i>Поочерёдное протягивание свободного конца нити через отверстия, которые обозначают нужную букву шифруемого слова.</i>
-                    <div align="left">
-                    <p>&nbsp;</p><br>
-                </figure>                
-            </div>
-        </main>
-            <div style="clear:both"></div>
-      	<footer id="podval">
-        <a href="http://na-lenskoy.ru" target="_blank">
-                <div id="footer-left"></div>
-                </a>
-                <div id="footer-right">
-                <span>
-                    © Автор сайта: Шестопалов Сергей, 2020 год<br>
+                    </p>
+                    <p>&nbsp;</p>
+            </div> 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
+       </section> 
+  </main>
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="container">
+      <div class="credits">
+        <div align="left">
+          <a href="http://na-lenskoy.ru"><div id="footer-left"></div></a>
+        </div>
+        <div id="footer-right">
+                <span class="align-right">
+                    © Автор сайта: Шестопалов Сергей, 2021 год<br>
                     Руководитель проекта педагог Петриченко В.А.<br>
                 </span>
                 </div>
                 <div class="clear"></div>
-        </footer>
-	</div><!--end wrapper-->
-    <button id = "toTop" class="border-20">^</button>
-    <script src="../javascript/theme-button.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="../assets/js/decrypted.js" type="text/javascript">
+  </script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
